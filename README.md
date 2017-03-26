@@ -42,3 +42,9 @@ To prune docker volumes
 
 The `web` service connects to the `redisdb` service using `redisdb:6379' which
 is passed in the docker-compose.yml as an environment variable
+
+Find the containerhost ip using
+`docker-machine ip containerhost`
+
+Access the server at http://192.168.99.101/ (replacing the IP address as
+required)
