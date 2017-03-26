@@ -41,4 +41,4 @@ To prune docker volumes
 `docker volume prune`
 
 The `web` service connects to the `redisdb` service using `redisdb:6379' which
-is passed in the Dockerfile as an environment variable
+is passed in the docker-compose.yml as an environment variable

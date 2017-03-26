@@ -5,8 +5,11 @@ services:
             context: ./app
         ports:
             - "5000:5000"
-        depends_on:
+        links:
             - redisdb
+        environment:
+            - REDIS_HOST=redisdb
+            - REDIS_PORT=6379
     redisdb:
         image: redis
         volumes:
